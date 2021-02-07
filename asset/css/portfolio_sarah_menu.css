@@ -1,0 +1,208 @@
+/* 
+font-family: 'Big Shoulders Stencil Text', cursive;*/
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(../../img/fond-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/***********************************/
+/*-------- PAGE MENU PROJET -------*/
+/***********************************/
+
+.conteneur-all
+{   
+    display: flex;
+    flex-direction: column;
+}
+h2
+{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 3.5em;
+    padding: 0;
+    margin: 0;
+    border: black 2px solid;
+    border-radius: 20px;
+}
+#prenom
+{
+   background-color: white; 
+   width: 28%;
+   padding-left: 2%;
+   margin-top: 0.5vh;
+   margin-left: 14.5vw;
+}
+/*menu ---------------------------------------------*/
+.conteneur_menu
+{
+    margin-top: 2vh;
+    margin-bottom: 8vh;
+}
+nav
+{
+    margin: 0 auto;   
+    width: 45%; 
+}
+nav .ligne a
+{
+    
+}
+.aZoom
+{
+    position: absolute;
+    padding: 5%;
+    border-radius: 40px;
+    width: 29.5vw;
+    height: auto;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.imgZoom
+{
+     position: relative; 
+    /* padding: .5%; */
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+    /* z-index: 5; */
+}
+
+/**************************/
+#grand-carre-noir
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 40px;
+    width: 30vw;
+    height: 60vh;
+    position: absolute;
+    left: 15vw;bottom: 16vh;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+}
+#grand-carre-noir p 
+{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 2.5em;
+    -webkit-text-stroke: 1px white;
+    color: rgba(0, 0, 0, 0);
+    padding-bottom: 8.5vh;
+    padding-left: 2vw;
+    margin: 0;
+}
+/****************************/
+#petit-carre-noir
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    width: 21vw;
+    height: 45vh;
+    position: absolute;
+    right: 24vw;top: 11vh;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+}
+#petit-carre-noir p 
+{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 2.5em;
+    -webkit-text-stroke: 1px white;
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding-bottom:1.5vh ;
+    margin-left: 16vw;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.ligne
+{   
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;    
+}
+.menuA
+{
+   width: 100%; 
+   border-radius: 40px; 
+   padding: 5%;
+}
+.ligne a
+{
+    width: 33%;
+    display: flex;
+}
+/* footer */
+footer
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+ footer #avatar
+{
+  border: 2px solid black;
+  border-radius: 8vh;
+  background-color: white;
+  margin-right: 2vw;
+  /* width: fit-content !important; */
+  padding-left: 0 !important;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-right: 0.7%;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: white;
+}
+footer #avatar:hover
+{
+  text-decoration: none;
+  color: white;
+}
+footer #avatar p
+{
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size: 2em;
+  -webkit-text-stroke: 1px black;
+  margin: auto;
+  display: none;
+}
+#nom
+{
+    background-color: black;
+    color: white;
+    width: 25%; 
+    text-align: end; 
+    padding-right: 2%;
+    justify-self: end;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 20vw;
+}
+#nom a
+{
+    text-decoration: none;
+    background-color: black;
+    color: black;
+    -webkit-text-stroke: 1px white;
+}
+#nom a:hover
+{
+    text-decoration: none;
+    color: black;
+    -webkit-text-stroke: 3px white;
+}
+#avatar_mini
+{
+  height: 10vh;
+  border-radius: 6vh;
+  border: 2px solid black;
+}
+

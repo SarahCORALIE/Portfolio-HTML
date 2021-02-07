@@ -1,0 +1,85 @@
+/* 
+font-family: 'Big Shoulders Stencil Text', cursive;*/
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(../../img/fond-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  bottom;
+
+}
+.conteneur-all
+{
+    width: 100%;
+    height: 100vh; 
+    justify-content: center;   
+    margin: auto;
+    display: flex;
+    align-content: center;
+}
+h1/* PORTFOLIO */
+{
+    font-size: 4.5em;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    -webkit-text-stroke: 2px white;
+    padding: 0;
+    margin: 0;
+}
+h2/* SARAH + CORALIE */
+{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 3.5em;
+    padding: 0;
+    margin: 0;
+}
+.conteneur-noir
+{
+    height: 76vh;
+    width: 70%;
+    background-color:rgba(0, 0, 0, 0.9);
+    margin: auto;
+    border-radius: 60px;
+    padding-left: 5vw;
+    color:black;
+    display: flex;
+    flex-direction: column;
+}
+.conteneur-blanc
+{
+    background-color: white;
+    border-radius: 90px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    margin: 0;
+    width: 60%;
+}
+a
+{
+    width: 50%;
+    object-fit: contain;
+    display: flex ;
+    margin-left: 33.5vh;
+}
+.avatar
+{
+    width: 100%;
+    border-radius: 80px;
+    margin-top:5vh;
+}
+#prenom
+{
+    padding-left: 5vw;
+}
+#nom
+{
+    color: white;
+    justify-self: flex-end;
+    text-align: end;
+    padding-right: 25vw;
+}
