@@ -19,9 +19,9 @@ $( function(){
     let vignette2 = $('#vignette2');
     let vignette3 = $('#vignette3');
     let vignette4 = $('#vignette4');
-    let vignette1Position = vignette1.offset();
-    let vignette1Top = vignette1Position.top;
-    let vignette1Left = vignette1Position.left;
+    let vignette3Position = vignette3.offset();
+    let vignette3Top = vignette3Position.top;
+    let vignette3Left = vignette3Position.left;
    
     function hoverMenu( vignette, newSrc,newHref ,zoomSrc =''){
         let firstSrc = vignette.attr('src');
@@ -33,7 +33,7 @@ $( function(){
                     timeoutId = window.setTimeout( function(){                  
                     $(`<a class='aZoom' href='${newHref}'><img src=${zoomSrc} class='imgZoom'></a>`)    
                     .prependTo( $('nav'));                    
-                    $('.aZoom').css({'left':vignette1Left,'top':vignette1Top});  
+                    $('.aZoom').css({'left':vignette3Left,'top':vignette3Top});  
                     },500); 
                 } 
                 else
@@ -41,7 +41,7 @@ $( function(){
                     timeoutId = window.setTimeout( function(){                  
                         $(`<a class='aZoom' href='${newHref}'><img src=${newSrc} class='imgZoom'></a>`)    
                         .prependTo( $('nav'));                    
-                        $('.aZoom').css({'left':vignette1Left,'top':vignette1Top});  
+                        $('.aZoom').css({'left':vignette3Left,'top':vignette3Top});  
                         },500);
                 }  
                 console.log( $('aZoom'));
