@@ -17,12 +17,22 @@ $(function(){
     $('#logo-menu').on('mouseenter', function(){
          $(this).css({'border-radius': '30px 30px 0 0', 'border':'solid black 3px'} );
         $('.toggle-menu').css({'opacity': 1});
-        console.log('test in',$( '#logo-menu'));
+        //console.log('test in',$( '#logo-menu'));
     });
 
     $('.toggle-menu').on('mouseleave', function(){
         $(this).css({'opacity': 0});
         $('#logo-menu').css({'border-radius': '30px', 'border':'none'} );
+    });
+
+    //Animation menu projet
+
+    $('nav a').on('mouseenter', function(){
+        console.log('mouseIn', $('nav a'));
+        $( this ).children().css('visibility','visible');
+    });
+    $('nav a').on('mouseleave', function(){
+        $( this ).children().css('visibility','hidden');
     });
 
 

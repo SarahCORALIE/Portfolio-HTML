@@ -60,7 +60,9 @@ nav .ligne a
     height: auto;
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.5);
+    /* visibility: hidden; */
 }
+
 .imgZoom
 {
      position: relative; 

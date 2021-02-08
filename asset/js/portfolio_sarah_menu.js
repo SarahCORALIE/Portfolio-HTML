@@ -44,17 +44,21 @@ $( function(){
                         $('.aZoom').css({'left':vignette1Left,'top':vignette1Top});  
                         },500);
                 }  
-                if($('aZoom').lenght >= 1 || $(vignette).attr('src',newSrc)){
-                    $('.ligne .a').off('mouseenter');
-                }      
+                console.log( $('aZoom'));
+                
+                 
                 //console.log('inMenu',$('nav').first());    
         }); //fin mouseenter       
         $('nav').on('mousemove', function(){  
             
             let element = $('nav').children();
             let aZoom = $('.aZoom');
-            console.log('outMenu',element);
-            console.log($('.aZoom').length);
+
+              if( $('aZoom').lenght >= 1 ){
+                    $('.ligne .a').off('mouseenter');
+                }   
+            //console.log('outMenu',element);
+            //console.log($('.aZoom').length);
             $(aZoom).on('mouseleave', function(){
                 //disparition image zoomé
                 window.clearTimeout(timeoutId);

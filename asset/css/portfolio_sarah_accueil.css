@@ -3,6 +3,8 @@ font-family: 'Big Shoulders Stencil Text', cursive;*/
 *
 {
     box-sizing: border-box;
+    overflow: hidden;
+   
 }
 body
 {
@@ -35,6 +37,28 @@ h2/* SARAH + CORALIE */
     font-size: 3.5em;
     padding: 0;
     margin: 0;
+}
+h3
+{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 3.5em;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    opacity: 0;
+    transition: all 1s ease !important;
+    
+}
+#bienvenue
+{
+    top: 40vh;right: 23vw;
+}
+#welcome
+{
+    top: 50vh;right: 16vw;
+
 }
 .conteneur-noir
 {

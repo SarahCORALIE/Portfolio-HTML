@@ -9,7 +9,7 @@ $(function(){
 
     //ANIMATION DU TEXTE
     
-
+    //ANIMATION AVATAR
     //ecoute position souris sur la page
     $(window).on('mousemove', function faceChange(e){
         //console.log('test mousemouve', e.pageX , e.pageY);
@@ -63,5 +63,12 @@ $(function(){
         }
     });
     
+    // ANIMATION WELCOME + BIENVENUE
+    $( avatar ).on('mouseenter', function(){
+        $('h3').css({opacity:1});
+    });
+    $(avatar).on('mouseleave', function(){
+        $('h3').css( {opacity:0} );
+    });
     
 });//RIEN APRES
