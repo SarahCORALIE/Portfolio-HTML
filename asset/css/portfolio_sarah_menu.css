@@ -7,13 +7,12 @@ font-family: 'Big Shoulders Stencil Text', cursive;*/
 body
 {
     background-image: url(../../img/fond-5.png);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
 }
 /***********************************/
 /*-------- PAGE MENU PROJET -------*/
 /***********************************/
-
 .conteneur-all
 {   
     display: flex;
@@ -47,10 +46,6 @@ nav
     margin: 0 auto;   
     width: 45%; 
 }
-nav .ligne a
-{
-    
-}
 .aZoom
 {
     position: absolute;
@@ -62,7 +57,6 @@ nav .ligne a
     background-color: rgba(0, 0, 0, 0.5);
     /* visibility: hidden; */
 }
-
 .imgZoom
 {
      position: relative; 
@@ -72,7 +66,6 @@ nav .ligne a
     height: auto;
     /* z-index: 5; */
 }
-
 /**************************/
 #grand-carre-noir
 {
@@ -188,18 +181,18 @@ footer #avatar p
     position: absolute;
     right: 20vw;
 }
-#nom a
+#prenom a
 {
     text-decoration: none;
-    background-color: black;
-    color: black;
-    -webkit-text-stroke: 1px white;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
-#nom a:hover
+#prenom a:hover
 {
     text-decoration: none;
-    color: black;
-    -webkit-text-stroke: 3px white;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
 }
 #avatar_mini
 {
@@ -207,4 +200,10 @@ footer #avatar p
   border-radius: 6vh;
   border: 2px solid black;
 }
+/************************************/
+/*---------- RESPONSIVITE ----------*/
+/************************************/
+@media screen and (max-width:990px)
+{
 
+}
