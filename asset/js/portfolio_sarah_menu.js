@@ -70,11 +70,29 @@ $( function(){
          });//fin mousemove                 
     }; //fin overMenu()
 
-    hoverMenu( vignette1, 'img/menuB4_moyen.png', 'menu_graphism.html');
-    hoverMenu( vignette2, 'img/menu3B_moyen.png', 'cv.html','img/oeil-ouvert_zoom1_moyen.png' );
-    hoverMenu( vignette3, 'img/menuB2_moyen.png','menu_web_dev.html' );
-    hoverMenu( vignette4, 'img/menu6B_moyen.png', 'contact.html','img/oeil-ouvert_zoom2_moyen.png' );
+    // hoverMenu( vignette1, 'img/menuB4_moyen.png', 'menu_graphism.html');
+    // hoverMenu( vignette2, 'img/menu3B_moyen.png', 'cv.html','img/oeil-ouvert_zoom1_moyen.png' );
+    // hoverMenu( vignette3, 'img/menuB2_moyen.png','menu_web_dev.html' );
+    // hoverMenu( vignette4, 'img/menu6B_moyen.png', 'contact.html','img/oeil-ouvert_zoom2_moyen.png' );
+    function hoverMenu2(vignette,$rubrique, newSrc ){
 
+        let firstSrc = vignette.attr('src');
+        vignette.parent().on('mouseenter', function(){
+            console.log('hoverMenu2 in');
+            $('#rubrique').show().html($rubrique);
+            vignette.attr('src', newSrc); 
+        });//fin mouseenter()
+        vignette.parent().on('mouseleave', function(){
+            $('#rubrique').hide();
+            vignette.attr('src', firstSrc); 
+
+        });
+
+    }//fin hoverMenu2()
+hoverMenu2(vignette3, '/ WEB DEV<i class="fas fa-angle-double-right "></i>', 'img/menuB2_moyen.png');
+hoverMenu2(vignette4, '/ CONTACT<i class="fas fa-angle-double-right "></i>', 'img/menu6B_moyen.png');
+hoverMenu2(vignette1, '/ GRAPHISM<i class="fas fa-angle-double-right "></i>','img/menuB4_moyen.png');
+hoverMenu2(vignette2, '/ CV<i class="fas fa-angle-double-right "></i>', 'img/menu3B_moyen.png');
 
 
 });//RIEN APRES
