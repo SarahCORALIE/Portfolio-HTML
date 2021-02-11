@@ -20,55 +20,55 @@ $( function(){
     let vignette3 = $('#vignette3');
     let vignette4 = $('#vignette4');
     let vignette3Position = vignette3.offset();
-    let vignette3Top = vignette3Position.top;
-    let vignette3Left = vignette3Position.left;
+    // let vignette3Top = vignette3Position.top;
+    // let vignette3Left = vignette3Position.left;
    
-    function hoverMenu( vignette, newSrc,newHref ,zoomSrc =''){
-        let firstSrc = vignette.attr('src');
+    // function hoverMenu( vignette, newSrc,newHref ,zoomSrc =''){
+    //     let firstSrc = vignette.attr('src');
 
-        vignette.parent().on('mouseenter', function(){//aparition image zoomée  
-                if( vignette == vignette2 || vignette == vignette4 )
-                {
-                    vignette.attr('src', newSrc); 
-                    timeoutId = window.setTimeout( function(){                  
-                    $(`<a class='aZoom' href='${newHref}'><img src=${zoomSrc} class='imgZoom'></a>`)    
-                    .prependTo( $('nav'));                    
-                    $('.aZoom').css({'left':vignette3Left,'top':vignette3Top});  
-                    },500); 
-                } 
-                else
-                {                    
-                    timeoutId = window.setTimeout( function(){                  
-                        $(`<a class='aZoom' href='${newHref}'><img src=${newSrc} class='imgZoom'></a>`)    
-                        .prependTo( $('nav'));                    
-                        $('.aZoom').css({'left':vignette3Left,'top':vignette3Top});  
-                        },500);
-                }  
-                console.log( $('aZoom'));
+    //     vignette.parent().on('mouseenter', function(){//aparition image zoomée  
+    //             if( vignette == vignette2 || vignette == vignette4 )
+    //             {
+    //                 vignette.attr('src', newSrc); 
+    //                 timeoutId = window.setTimeout( function(){                  
+    //                 $(`<a class='aZoom' href='${newHref}'><img src=${zoomSrc} class='imgZoom'></a>`)    
+    //                 .prependTo( $('nav'));                    
+    //                 $('.aZoom').css({'left':vignette3Left,'top':vignette3Top});  
+    //                 },500); 
+    //             } 
+    //             else
+    //             {                    
+    //                 timeoutId = window.setTimeout( function(){                  
+    //                     $(`<a class='aZoom' href='${newHref}'><img src=${newSrc} class='imgZoom'></a>`)    
+    //                     .prependTo( $('nav'));                    
+    //                     $('.aZoom').css({'left':vignette3Left,'top':vignette3Top});  
+    //                     },500);
+    //             }  
+    //             console.log( $('aZoom'));
                 
                  
-                //console.log('inMenu',$('nav').first());    
-        }); //fin mouseenter       
-        $('nav').on('mousemove', function(){  
+    //             //console.log('inMenu',$('nav').first());    
+    //     }); //fin mouseenter       
+    //     $('nav').on('mousemove', function(){  
             
-            let element = $('nav').children();
-            let aZoom = $('.aZoom');
+    //         let element = $('nav').children();
+    //         let aZoom = $('.aZoom');
 
-              if( $('aZoom').lenght >= 1 ){
-                    $('.ligne .a').off('mouseenter');
-                }   
-            //console.log('outMenu',element);
-            //console.log($('.aZoom').length);
-            $(aZoom).on('mouseleave', function(){
-                //disparition image zoomé
-                window.clearTimeout(timeoutId);
-                $('.aZoom').remove();
-                setTimeout(function (){
-                    vignette.attr('src', firstSrc);
-                },500);
-            });//fin mouseleave 
-         });//fin mousemove                 
-    }; //fin overMenu()
+    //           if( $('aZoom').lenght >= 1 ){
+    //                 $('.ligne .a').off('mouseenter');
+    //             }   
+    //         //console.log('outMenu',element);
+    //         //console.log($('.aZoom').length);
+    //         $(aZoom).on('mouseleave', function(){
+    //             //disparition image zoomé
+    //             window.clearTimeout(timeoutId);
+    //             $('.aZoom').remove();
+    //             setTimeout(function (){
+    //                 vignette.attr('src', firstSrc);
+    //             },500);
+    //         });//fin mouseleave 
+    //      });//fin mousemove                 
+    // }; //fin overMenu()
 
     // hoverMenu( vignette1, 'img/menuB4_moyen.png', 'menu_graphism.html');
     // hoverMenu( vignette2, 'img/menu3B_moyen.png', 'cv.html','img/oeil-ouvert_zoom1_moyen.png' );
