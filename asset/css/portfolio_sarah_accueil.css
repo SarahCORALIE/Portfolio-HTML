@@ -123,6 +123,10 @@ a
     height: auto;
     border-radius: 80px;
 }
+.avatar:hover
+{
+    border: solid black 3px;
+}
 #prenom
 {
     padding-left: 5vw;
